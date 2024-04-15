@@ -1,0 +1,16 @@
+# Maven specific
+target/
+
+# Eclipse specific
+.settings/
+.classpath
+.project
+
+# TestNG report files
+test-output/
+
+# OS specific files
+*.log
+
+# Dependencies
+dependency-reduced-pom.xml
