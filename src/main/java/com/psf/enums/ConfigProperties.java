@@ -1,0 +1,12 @@
+package com.psf.enums;
+
+public enum ConfigProperties {
+
+		URL,
+		BROWSERS,
+		OVERRIDEREPORTS,
+		PASSEDSTEPSSCREENSHOTS,
+		FAILEDSTEPSSCREENSHOTS,
+		SKIPPEDSTEPSSCREENSHOTS
+		
+}

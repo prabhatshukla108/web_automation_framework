@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.psf.driver.Driver;
 import com.psf.driver.DriverManager;
 
 public final class HomePageTest extends BaseTest {

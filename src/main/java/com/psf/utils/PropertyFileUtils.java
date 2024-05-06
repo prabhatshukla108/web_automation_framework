@@ -10,14 +10,15 @@ import java.util.Objects;
 import java.util.Properties;
 
 import com.psf.constants.FrameWorkConstants;
+import com.psf.enums.ConfigProperties;
 
 /**
  * @author prabh
  *
  */
-public final class ReadPropertyFile {
+public final class PropertyFileUtils {
 
-	private ReadPropertyFile() {
+	private PropertyFileUtils() {
 
 	}
 
@@ -35,12 +36,12 @@ public final class ReadPropertyFile {
 		}
 	}
 
-	public static String getValue(String key) throws Exception {
+	public static String getValue(ConfigProperties key) throws Exception {
 
-		if (Objects.isNull(key) || Objects.isNull(CONFIGMAP.get(key))) {
+		if (Objects.isNull(key.name().toLowerCase()) || Objects.isNull(CONFIGMAP.get(key.name().toLowerCase()))) {
 			throw new Exception("Property name " + key + " is not found.");
 		}
-		return CONFIGMAP.get(key);
+		return CONFIGMAP.get(key.name().toLowerCase());
 
 	}
 
